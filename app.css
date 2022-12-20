@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    position: relative;
+    width: 90%;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    margin: 10px auto; /*this will allow us to center the navbar even after changing the width of the navbar and makes it responsive */
+}
+.navlinks{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navlinks li{
+    float: right;
+    margin: 5px 5px;
+    padding: 5px;
+}
+.navlinks li:hover{
+    background-color: red;
+}
+.navlinks li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 1em;
+    padding: 5px;
+}
+.logo{
+    float: left;
+    margin: 10px 15px;
+}
+.barMenu{
+    float: left;
+    display: none;
+}
+
+@media screen and (max-width:700px)
