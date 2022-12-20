@@ -9,6 +9,11 @@
     color: #fff;
     margin: 10px auto; /*this will allow us to center the navbar even after changing the width of the navbar and makes it responsive */
 }
+.navbar:after{
+   content: "";
+   display: table;
+   clear: both;
+}
 .navlinks{
     list-style: none;
     margin: 0;
@@ -33,7 +38,7 @@
 .logo{
     float: right;
     margin: 10px 15px;
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     margin: 5px 30px;
 }
@@ -44,6 +49,22 @@
     font-size: 2em;
     cursor: pointer;
 }
+@media screen and (max-width:900px){
+    body{
+        background-color: aqua;
+    }
+    .logo{
+        font-size: 1.5em;
+        padding: 10px;
+    }
+    .navlinks li a{
+       font-size: 1em;
+    }
+    .navlinks li{
+        margin: 5px auto;
+        padding: 10px;
+    }
+}
 
 @media screen and (max-width:700px){
     body{
@@ -52,6 +73,7 @@
     .navlinks li{
         width: 100%;
         margin: 0 !important;
+        background-color: black;
     }
     .barMenu{
         display: block;
@@ -61,5 +83,11 @@
     }
     .navbar{
         width: 100%;
+    }
+    .logo{
+        width: 100%;
+        padding: 5px;
+        margin: auto;
+        background-color: black;
     }
 }
