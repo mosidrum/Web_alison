@@ -15,7 +15,7 @@
     padding: 0;
 }
 .navlinks li{
-    float: right;
+    float: left;
     margin: 5px 5px;
     padding: 5px;
 }
@@ -31,12 +31,35 @@
     padding: 5px;
 }
 .logo{
-    float: left;
+    float: right;
     margin: 10px 15px;
+    font-size: 3em;
+    color: white;
+    margin: 5px 30px;
 }
 .barMenu{
     float: left;
     display: none;
+    margin: 10px 15px;
+    font-size: 2em;
+    cursor: pointer;
 }
 
-@media screen and (max-width:700px)
+@media screen and (max-width:700px){
+    body{
+        background: blue;
+    }
+    .navlinks li{
+        width: 100%;
+        margin: 0 !important;
+    }
+    .barMenu{
+        display: block;
+    }
+    .navlinks{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+    }
+}
